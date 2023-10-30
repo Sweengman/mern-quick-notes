@@ -36,7 +36,7 @@ async function create(req, res) {
         res.json(token)
     } catch (err) {
         console.log('oops')
-        res.status(400).json('Incorrect email')
+        res.status(400).json(err)
     }
 }
 
